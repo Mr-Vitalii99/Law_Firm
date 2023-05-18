@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochkovyi & Co Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <meta property="og:image" content="images/preview.jpg">
+
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="icon" sizes="32x32" href="./images/batman-logo.svg">
+
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/mustache/mustache.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/mailing.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/burger.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+        <div class="wrapper">
+            <div class="content">
+
+                <header class="page-header">
+                    <div class="page-header__top-menu">
+
+
+                        <a href="./index.html" lang="en" class="logo page-header__logo">
+                            Kochkovyi & Co
+                            <span class="logo__accent">Group</span>
+                        </a>
+
+                        <button type="button" class="burger-button" data-menu-button aria-expanded="false"
+                            aria-controls="menu-contaier">
+
+                            <svg class="burger-button__icon" width="40px" height="40px"
+                                aria-label="Переключатель мобильного меню">
+                                <use href="./images/sprite.svg#icon-bat2" class="burger-button__icon--open"></use>
+                                <use href="./images/sprite.svg#burger-close" class="burger-button__icon--close"></use>
+                            </svg>
+                        </button>
+
+                        <div class="menu-container" data-menu>
+                            <nav class="site-nav">
+                                <ul class="site-nav__list list-style">
+                                    <li class="site-nav__item">
+                                        <a href="./index.html" class="site-nav__link">Про нас</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./team.html" class="site-nav__link">Команда</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./services.html"
+                                            class="site-nav__link site-nav__link--current">Послуги</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./contacts.html" class="site-nav__link">Контакти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="contacts-container">
+                                <ul class="contacts list-style">
+                                    <li class="contacts__item">
+                                        <a href="mailto:kochkovyi@group.com" lang="en" class="contacts__link ">
+                                            <svg class="contacts__icon-envelope">
+                                                <use href="./images/sprite.svg#icon-envelope"></use>
+                                            </svg>
+                                            kochkovyi@group.com</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="tel:+380988888888" class="contacts__link contacts__link--accent">
+                                            <svg class="contacts__icon-smartphone">
+                                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                                            </svg>
+                                            +38 098 888 88 88</a>
+                                    </li>
+                                </ul>
+
+                                <ul class="burger-social-links list-style">
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Instagram</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Twitter</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Facebook</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </header>
+
+                <section class="section">
+                    <div class="services-container ">
+                        <h1 class="section__heading">Наші послуги</h1>
+
+
+                        <ul class="list-set list-style services-page-list">
+
+                            <li class="list-set__item list-set__item--three-column services-page-item">
+                                <article data-service="0" class="service-card">
+                                    <a href="#" class="service-card__link">
+                                        <div class="service-card__image-container">
+
+                                            <img src="./images/service-img.png" alt="">
+
+                                            <div class="service-card__overlay">
+                                                <P class="service-card__text">Якщо ви керуєте малим бізнесом, інвестуєте
+                                                    в бізнес або є
+                                                    юридичною особою, ми можемо порадити вам найкращі способи
+                                                    управління, зростання та захисту вашого багатства. У нас понад 300
+                                                    бізнес-клієнтів, від
+                                                    лікарів до розробників, бухгалтерів, інвесторів.</P>
+                                            </div>
+                                        </div>
+                                        <div class="service-card__bottom">
+                                            <h3 class="service-card__title">Господарське право</h3>
+                                            <button class="service-card__button" href="#">Дізнатись детальніше</button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+
+                            <li class="list-set__item list-set__item--three-column services-page-item">
+                                <article data-service="1" class="service-card">
+                                    <a href="#" class="service-card__link">
+                                        <div class="service-card__image-container">
+
+                                            <img src="./images/service-img.png" alt="">
+
+                                            <div class="service-card__overlay">
+                                                <P class="service-card__text">Власники житлової та комерційної
+                                                    нерухомості, покупці,
+                                                    кредитори, орендодавці та інвестори повинні захистити найбільші
+                                                    інвестиції свого життя. Незалежно від того, чи використовуєте ви
+                                                    агента з нерухомості чи
+                                                    нас для обговорення вашої
+                                                    угоди, ми гарантуємо, що угода відбудеться.</P>
+                                            </div>
+                                        </div>
+                                        <div class="service-card__bottom">
+                                            <h3 class="service-card__title">Нерухомість</h3>
+                                            <button class="service-card__button" href="#">Дізнатись детальніше</button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+
+                            <li class="list-set__item list-set__item--three-column services-page-item">
+                                <article data-service="2" class="service-card">
+                                    <a href="#" class="service-card__link">
+                                        <div class="service-card__image-container">
+
+                                            <img src="./images/service-img.png" alt="">
+
+                                            <div class="service-card__overlay">
+                                                <P class="service-card__text">Ми пропонуємо доброзичливі та інформовані
+                                                    поради тим, кому доручено виконувати функції довіреної особи
+                                                    померлої коханої
+                                                    людини або тим, кому потрібно самостійно планувати майно, зокрема
+                                                    скласти юридичний заповіт. Ми прагнемо з комфортом
+                                                    допомогти вам у вирішенні ваших проблем завдяки нашому досвіду та
+                                                    унікальному розумінню, отриманому завдяки допомозі
+                                                    сотням сімей.</P>
+                                            </div>
+                                        </div>
+                                        <div class="service-card__bottom">
+                                            <h3 class="service-card__title">Планування нерухомості</h3>
+                                            <button class="service-card__button" href="#">Дізнатись детальніше</button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+
+                            <li class="list-set__item list-set__item--three-column services-page-item">
+                                <article data-service="3" class="service-card">
+                                    <a href="#" class="service-card__link">
+                                        <div class="service-card__image-container">
+
+                                            <img src="./images/service-img.png" alt="">
+
+                                            <div class="service-card__overlay">
+                                                <P data-service="3" class="service-card__text">Хочете переконатися, що
+                                                    ваш
+                                                    бізнес продовжує працювати чи його легко згорнути, якщо ви в
+                                                    лікарні, недоступні або
+                                                    за інших несприятливих обставин? Ви хочете зменшити мішень
+                                                    на своїй спині та не стати жертвою дурних судових процесів? Як щодо
+                                                    конфіденційності?
+                                                    вам подобається той факт, що
+                                                    інформація та активи вас і вашої сім’ї рознесені по всьому
+                                                    Інтернету? </P>
+                                            </div>
+                                        </div>
+                                        <div class="service-card__bottom">
+                                            <h3 class="service-card__title">Захист активів</h3>
+                                            <button class="service-card__button" href="#">Дізнатись детальніше</button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+
+                            <li class="list-set__item list-set__item--three-column services-page-item">
+                                <article data-service="4" class="service-card">
+                                    <a href="#" class="service-card__link">
+                                        <div class="service-card__image-container">
+
+                                            <img src="./images/service-img.png" alt="">
+
+                                            <div class="service-card__overlay">
+                                                <P data-service="4" class="service-card__text">Вам потрібен юридичний
+                                                    партнер із всебічними знаннями банківських та фінансових послуг.
+                                                    Наша команда юристів має значний
+                                                    досвід консультування щодо складних фінансових операцій, розробки та
+                                                    реалізації фінансових стратегій, а також надання
+                                                    рекомендацій щодо стратегічних можливостей для досягнення ваших
+                                                    бізнес-цілей. </P>
+                                            </div>
+                                        </div>
+                                        <div class="service-card__bottom">
+                                            <h3 class="service-card__title">Фінансові послуги</h3>
+                                            <button class="service-card__button" href="#">Дізнатись детальніше</button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+
+                            <li class="list-set__item list-set__item--three-column services-page-item">
+                                <article data-service="5" class="service-card">
+                                    <a href="#" class="service-card__link">
+                                        <div class="service-card__image-container">
+
+                                            <img src="./images/service-img.png" alt="">
+
+                                            <div class="service-card__overlay">
+                                                <P data-service="5" class="service-card__text">Ми в Vela Wood пишаємося
+                                                    тим, що надаємо широкий спектр послуг нашим клієнтам із прямих
+                                                    інвестицій. Наша команда юристів
+                                                    може допомогти вам зорієнтуватися в складному нормативному
+                                                    ландшафті, який оточує формування фондів, зокрема
+                                                    запропонувати документацію, знайти інвесторів, залучити капітал і
+                                                    розробити стратегії виходу.</P>
+                                            </div>
+                                        </div>
+                                        <div class="service-card__bottom">
+                                            <h3 class="service-card__title">Представництво фонду</h3>
+                                            <button class="service-card__button" href="#">Дізнатись детальніше</button>
+                                        </div>
+                                    </a>
+                                </article>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+
+                <footer class="page-footer">
+                    <div class="page-footer__footer-menu">
+                        <div class="page-footer__wrapper">
+                            <div class="page-footer__group">
+
+                                <a href="./index.html" lang="en" class="logo page-footer__logo">Kochkovyi & Co <span
+                                        class="logo__accent">Group</span></a>
+                                <address>
+                                    <ul class="info-list list-style">
+                                        <li class="info-list__item">
+                                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                                rel="noopener noreferrer nofollow"
+                                                class="info-list__link info-list__link--white-text">1080 W Indiantown
+                                                Road Ste 888, Gotham City</a>
+                                        </li>
+                                        <li class="info-list__item">
+                                            <a href="mailto:kochkovyi@group.com" lang="en"
+                                                class="info-list__link">kochkovyi@group.com</a>
+                                        </li>
+                                        <li class="info-list__item">
+                                            <a href="tel:+380988888888" class="info-list__link">+38 098 888 88 88</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+
+                            <div class="social-links-group">
+                                <h2 class="social-links-group__title">приєднуйтесь</h2>
+                                <ul class="social-links list-style">
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-instagram-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <form class="mailing">
+                            <div class="mailing-group">
+                                <label class="mailing__label">
+                                    <h2 class=" mailing__title">Підпишіться на розсилку</h2>
+                                    <input type=" email" class="mailing__input" name="email" placeholder="E-mail"
+                                        required>
+                                </label>
+                                <button type="submit" class="button button--accent mailing__button">Підписатися</button>
+                            </div>
+                        </form>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal__body">
+                <div class="modal__content">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <div class="modal__text-container">
+                        <div id="output"></div>
+                        <template id="template">
+                            <div class="modal__text">
+                                <h2 class="modal__h2">{{mainTitle}}</h2>
+                                <h3 class="modal__h3">{{title1}}</h3>
+                                <p>{{description1}}</p>
+                                <h3 class="modal__h3">{{title2}}</h3>
+                                <p>{{description2}}</p>
+                                <h3 class="modal__h3">{{title3}}</h3>
+                                <p>{{description3}}</p>
+                                <h3 class="modal__h3">{{title4}}</h3>
+                                <ul style="list-style: none;">
+                                    {{#servicesArray}}
+                                    <li>{{.}}</li>
+                                    {{/servicesArray}}
+                                </ul>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-subscription" class="modal">
+            <div class="modal__body">
+                <div class="modal__content modal__content--gratitude">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <div id="output"></div>
+                    <template id="template">
+                    </template>
+                    <h2 class="modal__title--gratitude">Дякую за підписку!</h2>
+                    <p class="modal__text-gratitude">Обіцємо, що Ви будете отримувати лише ексклюзивні, корисні і
+                        цікаві матеріали!</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

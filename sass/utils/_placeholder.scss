@@ -1,0 +1,72 @@
+/** Сброс стилей списков  */
+
+%list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/** Общие характеристики кнопки  */
+
+%button {
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    padding: 6px 22px;
+
+
+    color: $accent-text-color;
+    background-color: $primary-color;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $primary-text-color;
+        background-color: $accent-secondary-color;
+    }
+}
+
+%button--accent {
+    @extend %button;
+    color: $primary-text-color;
+    background-color: $primary-color;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-secondary-color;
+    }
+}
+
+%button-close {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: $primary-text-color;
+    fill: $accent-black-color;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: $primary-color;
+    }
+}

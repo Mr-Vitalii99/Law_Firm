@@ -1,0 +1,158 @@
+.team-section {
+    background: linear-gradient(to right, #000000 30%, #053341);
+}
+
+
+.mobile-container {
+    padding-top: 20px;
+    max-width: 500px;
+}
+
+.team {
+    &__item-mobile {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    &__item-mobile:last-child {
+        margin-bottom: 0px;
+    }
+
+    &__item {
+        height: 100px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &__image {
+        max-width: 170px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    &__left {
+        display: none;
+    }
+
+    &__right {
+        display: none;
+    }
+
+    &__descriptions {
+        color: $accent-text-color;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__descriptions-title {
+        font-size: 16px;
+        line-height: 1.4rem;
+        color: $accent-text-color;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    &__descriptions__text {
+        font-size: 14px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .team-container {
+        padding: 0 7vw;
+    }
+
+    .team>* {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-container {
+        display: none;
+    }
+
+    .team {
+        display: flex;
+        padding: calc($index * 8) 0;
+
+        &__item {
+            max-width: calc($index * 21);
+            margin-bottom: $gallery-gap;
+            height: auto;
+            max-height: 180vh;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+
+        &__image {
+            max-width: calc($index * 21);
+            height: auto;
+            margin-right: 0px;
+        }
+
+
+        &__left {
+            margin-top: calc($gallery-gap * 1.75);
+        }
+
+        &__right &__item {
+            margin: 0;
+            margin-top: $gallery-gap;
+        }
+
+        &__right &__item:last-child {
+            margin: 0;
+            margin-top: calc($gallery-gap * 1.95);
+        }
+
+
+        &__descriptions-title {
+            font-size: 24px;
+            line-height: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__descriptions__text {
+            font-size: 16px;
+            line-height: 1.75;
+        }
+    }
+
+    img[data-member="0"] {
+        width: 300px;
+        height: 400px;
+    }
+
+    img[data-member="1"] {
+        width: 300px;
+        height: 400px;
+    }
+
+    img[data-member="2"] {
+        width: 300px;
+        height: 400px;
+    }
+
+    img[data-member="3"] {
+        width: 300px;
+        height: 400px;
+    }
+}
+
+
+
+@media screen and (min-width: 1170px) {
+
+    .mobile-container {
+        display: none;
+    }
+
+}

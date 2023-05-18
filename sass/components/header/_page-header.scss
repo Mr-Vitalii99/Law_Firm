@@ -1,0 +1,21 @@
+.page-header {
+    //* Фіксована шапка
+    //  position: fixed;
+    //    top: 0;
+    // left: 0;
+    // z-index: 6;
+    // min-height: 80px;
+    // width: 100%;
+
+    min-height: 60px;
+    background-color: $accent-black-color;
+    border-bottom: 1px solid $border-color;
+}
+
+
+.page-header__top-menu {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}

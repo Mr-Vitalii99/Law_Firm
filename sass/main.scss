@@ -1,0 +1,50 @@
+// 
+//* Utils  */
+
+@import './utils/variables';
+@import './utils/placeholder';
+@import './utils/hidden';
+
+//* Common-settings  */
+
+@import './common/common-settings';
+@import './common/social-links';
+@import './common/logo';
+@import './common/modal';
+@import './common/form-base';
+@import './common/list-set';
+
+
+//* Header-page  */
+
+@import './components/header/page-header';
+@import './components/header/burger-menu';
+@import './components/header/site-nav';
+@import './components/header/contacts';
+
+
+//* MAIN PAGE */
+@import './components/main-page/page-hero';
+@import './components/main-page/advantages';
+@import './components/main-page/greeting.scss';
+@import './components/main-page/approach';
+@import './components/main-page/services-main-page';
+@import './components/main-page/application';
+
+//* TEAM PAGE   */
+
+@import './components/team/team-hero';
+@import './components/team/team';
+
+
+//* SERVICES PAGE  */
+@import './components/services-page/services.scss';
+
+//* CONTACTS PAGE  */
+
+@import './components/contacts/contacts';
+
+//* Footer-page  */
+
+@import './components/footer/page-footer';
+@import './components/footer/mailing';

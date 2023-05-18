@@ -1,0 +1,25 @@
+    //* Colors   */
+    $primary-text-color:#FFFFFF;
+    $secondary-text-color: #757575;
+    $accent-text-color: #F5F5F5;
+
+    $primary-color: #00bae9;
+    $accent-color: #d5e6ff;
+    $accent-secondary-color: #0098be;
+    $accent-black-color: #000000;
+
+    $border-color: #ECECEC;
+    $icon-color: #AFB1B8;
+    $secondary-bg-color: #2F303A;
+
+
+
+    //*  Fonts    */
+    $primary-text-fonts: Roboto;
+    $accent-text-fonts: Raleway;
+
+
+    //* Team section settings */
+
+    $index: calc(1vw + 1vh); //* Единица экрана экрана*/
+    $gallery-gap: calc($index * 7.5)

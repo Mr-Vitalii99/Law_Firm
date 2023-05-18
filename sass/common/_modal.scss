@@ -1,0 +1,243 @@
+//**Загальне
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    border-radius: 4px;
+    z-index: 200;
+
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+
+.modal.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.is-open .modal__content {
+    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    opacity: 1;
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.modal__close-button {
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    font-size: 1.3em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__close-button:hover,
+.modal__close-button:focus {
+
+    fill: $primary-color;
+}
+
+
+.modal__content {
+    display: flex;
+    background: linear-gradient(to right, #111111, #2b586d, #017092);
+    border-radius: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .modal__body {
+        padding: 30px 10px;
+    }
+}
+
+
+//* Секція Герой 
+.modal__content.modal__content--hero {
+    position: relative;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+    width: 350px;
+}
+
+.modal__title--hero {
+    margin-bottom: 20px;
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: none;
+}
+
+@media screen and (min-width: 768px) {
+    .modal__content.modal__content--hero {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal__content.modal__content--hero {
+        width: 528px;
+        height: 581px;
+    }
+}
+
+
+
+//*Секція команда
+.modal__image {
+    display: none;
+}
+
+.modal__text-container {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-radius: 8px;
+    color: $primary-text-color;
+
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-indent: 1em;
+    text-align: justify;
+    overflow-y: auto;
+}
+
+.modal__text-container.modal__text-container--team {
+    margin-left: 10px;
+    text-indent: 0;
+}
+
+.modal__h2 {
+    text-align: center;
+}
+
+.modal__h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal__content {
+        max-width: 80%;
+        height: 70vh;
+        padding: 20px;
+        transition: all 0.8s ease 0s;
+        opacity: 0;
+        transform: perspective(600px) translate(0px, 100%) rotateX(45deg);
+    }
+
+    .modal__image {
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(53, 53, 53);
+        align-self: flex-start;
+        border-radius: 8px;
+    }
+
+    .modal__text-container {
+
+        font-size: 1rem;
+        line-height: 1.3;
+        text-align: left;
+
+    }
+
+    .modal__text {
+        padding: 5px;
+    }
+
+    .modal__h2 {
+        margin-bottom: 10px;
+        text-align: left;
+        text-indent: 0;
+    }
+
+    .modal__h3 {
+        margin-bottom: 20px;
+        text-align: left;
+        text-indent: 0;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .modal__content {
+        max-width: 70%;
+        height: 70vh;
+        padding: 30px;
+    }
+
+
+    .modal__text {
+        padding: 10px;
+    }
+}
+
+//* Секція Контакти 
+.modal__content.modal__content--gratitude {
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+    width: 350px;
+}
+
+.modal__title--gratitude {
+    margin-bottom: 20px;
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: none;
+}
+
+.modal__text-gratitude {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .modal__content.modal__content--gratitude {
+        width: 350px;
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .modal__content.modal__content--gratitude {
+        width: 350px;
+        height: 50vh;
+    }
+}

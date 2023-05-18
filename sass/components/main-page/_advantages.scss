@@ -1,0 +1,91 @@
+.advantage {
+    background: linear-gradient(to right, #000000 30%, #053341);
+
+    &__container {
+        color: $primary-text-color;
+        text-align: center;
+        padding: 30px;
+        z-index: 3;
+    }
+
+    &__background-icon {
+        display: inline-block;
+        margin-bottom: 30px;
+        padding: 25px;
+        text-align: center;
+        width: 100%;
+
+        background-color: rgba(0, 0, 0, 0.507);
+
+    }
+
+    &__title {
+        color: $accent-text-color;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+
+    &__text {
+        color: $primary-text-color;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    .advantage {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+
+        background-color: $accent-black-color;
+        background-image: url(/images/office.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+
+        z-index: 4;
+    }
+
+    .advantage::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, .8);
+        z-index: 2;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1170px) {
+    .advantage {
+        margin-top: 50px;
+
+        &__background-icon {
+            width: 270px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.logo {
+    display: inline-flex;
+    margin-right: 92px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    align-items: center;
+    font-family: $primary-text-fonts, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 24px;
+    letter-spacing: 0.03;
+    text-decoration: none;
+    color: $primary-color;
+
+    &__accent {
+        color: $accent-color;
+        word-wrap: break-word;
+    }
+}
+
+//* Логотип у хедері */
+.logo.page-header__logo {
+    margin-right: 32px;
+    font-size: 22px;
+    letter-spacing: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+
+@media screen and (min-width: 1170px) {
+    .logo.page-header__logo {
+        margin-right: 92px;
+       
+    }
+}
+
+
+//* Логотип у футері*/
+.page-footer__logo {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color:  $primary-color;
+}

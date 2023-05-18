@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochkovyi & Co Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <meta property="og:image" content="images/preview.jpg">
+
+
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="icon" sizes="32x32" href="./images/batman-logo.svg">
+
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/typed/typed.min.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/mailing.js" defer></script>
+    <script src="./js/hero.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/burger.js" defer></script>
+</head>
+
+<body>
+    <main>
+
+
+        <div class="wrapper">
+            <div class="content">
+
+                <header class="page-header">
+                    <div class="page-header__top-menu">
+
+
+                        <a href="./index.html" lang="en" class="logo page-header__logo">
+                            Kochkovyi & Co
+                            <span class="logo__accent">Group</span>
+                        </a>
+
+                        <button type="button" class="burger-button" data-menu-button aria-expanded="false"
+                            aria-controls="menu-contaier">
+
+                            <svg class="burger-button__icon" width="40px" height="40px"
+                                aria-label="Переключатель мобильного меню">
+                                <use href="./images/sprite.svg#icon-bat2" class="burger-button__icon--open"></use>
+                                <use href="./images/sprite.svg#burger-close" class="burger-button__icon--close"></use>
+                            </svg>
+                        </button>
+
+                        <div class="menu-container" data-menu>
+                            <nav class="site-nav">
+                                <ul class="site-nav__list list-style">
+                                    <li class="site-nav__item">
+                                        <a href="./index.html" class="site-nav__link site-nav__link--current">Про
+                                            нас</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./team.html" class="site-nav__link">Команда</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./services.html" class="site-nav__link">Послуги</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./contacts.html" class="site-nav__link">Контакти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="contacts-container">
+                                <ul class="contacts list-style">
+                                    <li class="contacts__item">
+                                        <a href="mailto:kochkovyi@group.com" lang="en" class="contacts__link ">
+                                            <svg class="contacts__icon-envelope">
+                                                <use href="./images/sprite.svg#icon-envelope"></use>
+                                            </svg>
+                                            kochkovyi@group.com</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="tel:+380988888888" class="contacts__link contacts__link--accent">
+                                            <svg class="contacts__icon-smartphone">
+                                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                                            </svg>
+                                            +38 098 888 88 88</a>
+                                    </li>
+                                </ul>
+
+                                <ul class="burger-social-links list-style">
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Instagram</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Twitter</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Facebook</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </header>
+
+                <section class="hero">
+                    <div class="hero__background">
+                        <div class="hero__image"></div>
+                    </div>
+                    <div class="hero__container">
+                        <div class="hero__title">Kochkovyi & Co <br /> <span class="hero__title-span">Group</span></div>
+                        <p class="hero__text">Залишіть бізнес нам, <br /> зосередьтеся на тому, що дійсно важливо</p>
+                        <button class="hero__button">Зв'язатися з нами</button>
+                    </div>
+                </section>
+
+                <section class="greeting">
+                    <h3 class="greeting__title">Ви зірка. Ми тут, щоб допомогти вам сіяти.</h3>
+                    <div class="greeting__background">
+                        <div class="greeting__image"></div>
+                    </div>
+                    <div class="greeting__text-container">
+                        <h3 class="greeting__text-container-title">Ласкаво просимо до Kochkovyi & Co Group</h3>
+                        <p class="greeting__text">Kochkovyi & Co Group — це спеціалізована юридична фірма, що
+                            спеціалізується на корпоративному праві. Наша практика
+                            зосереджена в галузі управління бізнесом, захисту активів, венчурного капіталу та
+                            корпоративних угод. Ми пишаємося
+                            тим, що будуємо справжні стосунки з нашими клієнтами та співпрацюємо з ними у довгостроковій
+                            перспективі.</p>
+                        <h3 id="title-autofill" class="greeting__text-container-title"></h3>
+                        <p id="text-autofill" class="greeting__text"></p>
+                    </div>
+                    <button class="navigation__button">Next Section</button>
+                </section>
+
+                <section class="approach">
+                    <div class="approach__container">
+                        <h2 class="approach__title">Ми є вашим прогресивним юридичним партнером у галузі бізнесу</h2>
+                        <p class="approach__text">Наш підхід до надання юридичних послуг відрізняється. Ми настільки ж
+                            зосереджені на
+                            задоволенні ваших потреб у
+                            отримання результатів у управлінні своїм прибутком. Наша сучасна, оптимізована та
+                            технологічна структура
+                            Зосереджений на клієнті. Тому що ваш бізнес - це наш бізнес.</p>
+                    </div>
+                </section>
+
+                <section class="services">
+                    <h3 class="services__title">На чому ми спеціалізуємося</h3>
+                    <div class="services__background">
+                        <div class="services__image"></div>
+                    </div>
+                    <div class="services__background-additional"></div>
+
+                    <ul class="list-set--services list-style">
+                        <li class="list-set__item--services ">
+                            <h3 class="services__block-title">Господарське право</h3>
+                            <p class="services__block-text">Якщо ви керуєте малим бізнесом, інвестуєте в бізнес або є
+                                юридичною особою, ми можемо порадити вам найкращі способи
+                                управління, зростання та захисту вашого багатства. У нас понад 300 бізнес-клієнтів, від
+                                лікарів до розробників, бухгалтерів, інвесторів.</p>
+                            <button class="services__btn">Дізнатися більше</button>
+                        </li>
+                        <li class="list-set__item--services ">
+                            <h3 class="services__block-title">Нерухомість</h3>
+                            <p class="services__block-text">Власники житлової та комерційної нерухомості, покупці,
+                                кредитори, орендодавці та інвестори повинні захистити найбільші
+                                інвестиції свого життя. Незалежно від того, чи використовуєте ви агента з нерухомості чи
+                                нас для обговорення вашої
+                                угоди, ми гарантуємо, що угода відбудеться.</p>
+                            <button class="services__btn">Дізнатися більше</button>
+                        </li>
+                        <li class="list-set__item--services ">
+                            <h3 class="services__block-title">Планування нерухомості</h3>
+                            <p class="services__block-text">Ми прагнемо з комфортом
+                                допомогти вам у вирішенні ваших проблем завдяки нашому досвіду та унікальному розумінню,
+                                отриманому завдяки допомозі
+                                сотням сімей.</p>
+                            <button class="services__btn">Дізнатися більше</button>
+                        </li>
+                        <li class="list-set__item--services ">
+                            <h3 class="services__block-title">Захист активів</h3>
+                            <p class="services__block-text"> Хочете переконатися, що ваш
+                                бізнес продовжує працювати чи його легко згорнути, якщо ви в лікарні, недоступні або
+                                за інших несприятливих обставин? Ви хочете зменшити мішень
+                                на своїй спині та не стати жертвою дурних судових процесів? Як щодо конфіденційності?
+                                вам подобається той факт, що
+                                інформація та активи вас і вашої сім’ї рознесені по всьому Інтернету?</p>
+                            <button class="services__btn">Дізнатися більше</button>
+                        </li>
+                    </ul>
+                    <button class="navigation__button">Next Section</button>
+                </section>
+
+                <section class="advantage">
+                    <div class="advantage__container">
+                        <h2 class="section__heading hidden"> Наші переваги</h2>
+                        <ul class="list-set list-style">
+                            <li class="list-set__item">
+                                <article class="advantage__item">
+                                    <div class="advantage__background-icon">
+                                        <svg class="advantage-icon" width="70px" height="70px">
+                                            <use href="./images/sprite.svg#icon-suitcase"></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="advantage__title">Досвід</h3>
+                                    <p class="advantage__text">Наша фірма має більш ніж 10-річний досвід роботи, тому
+                                        ви можете бути впевнені, що отримаєте якісну юридичну
+                                        консультацію.</p>
+                                </article>
+                            </li>
+                            <li class="list-set__item">
+                                <article class="advantage__item">
+                                    <div class="advantage__background-icon">
+                                        <svg class="advantage-icon" width="70px" height="70px">
+                                            <use href="./images/sprite.svg#icon-diagram-1"></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="advantage__title">Захист активів</h3>
+                                    <p class="advantage__text">Ми допомагаємо людям, структуруючи та організуючи їх
+                                        особисті та
+                                        ділові активи, щоб вони були готові захищатися від дурних
+                                        судових позовів та мати додаткові важелі для мінімізації будь-яких
+                                        збитків.</p>
+                                </article>
+                            </li>
+                            <li class="list-set__item">
+                                <article class="advantage__item">
+                                    <div class="advantage__background-icon">
+                                        <svg class="advantage-icon" width="70px" height="70px">
+                                            <use href="./images/sprite.svg#icon-clock-1"></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="advantage__title">Планування бізнесу</h3>
+                                    <p class="advantage__text">Юристи називають ці галузі права "бізнес-плануванням".
+                                        Ми використовуємо бізнес-структури та розроблені програми
+                                        дій для максимально ефективної роботи вашого бізнесу, які в процесі
+                                        реалізації можуть коригуватися в
+                                        відповідно до обставин, що змінилися.
+                                    </p>
+                                </article>
+                            </li>
+                            <li class="list-set__item">
+                                <article class="advantage__item">
+                                    <div class="advantage__background-icon">
+                                        <svg class="advantage-icon" width="70px" height="70px">
+                                            <use href="./images/sprite.svg#icon-antenna-1"></use>
+                                        </svg>
+                                    </div>
+                                    <h3 class="advantage__title">Клієнтоорієнтованість</h3>
+                                    <p class="advantage__text">Ми ставимо наших клієнтів на перше місце. Опираясь на це
+                                        переконання та наші знання в області захисту бізнесу, ми знаходимо
+                                        рішення, які наилучшим чином відповідають індивідуальним потребам
+                                        наших клієнтів.
+                                    </p>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="application section">
+
+                    <div class="application__background">
+                        <div class="application__image"></div>
+                        <button class="navigation__button">Next Section</button>
+                    </div>
+
+                    <div class="application__form">
+                        <h2 class="modal__title--hero">Залиште свої дані, ми вам передзвонимо</h2>
+
+                        <form class="form-base">
+                            <div class="form-base__field">
+                                <input type="text" class="form-base__input" name="user-name" id="user-name"
+                                    placeholder=" " required>
+                                <span class="form-base__span">Ім'я</span>
+                                <svg class="form-base__icon-input" width="18px" height="18px">
+                                    <use href="./images/sprite.svg#icon-person-black"></use>
+                                </svg>
+                            </div>
+
+                            <div class="form-base__field">
+                                <input type="text" class="form-base__input" name="phone" id="phone" placeholder=" "
+                                    required>
+                                <span class="form-base__span">Телефон</span>
+                                <svg class="form-base__icon-input" width="18px" height="18px">
+                                    <use href="./images/sprite.svg#icon-phone-black"></use>
+                                </svg>
+                            </div>
+
+                            <div class="form-base__field">
+                                <input type="text" class="form-base__input" name="email" id="email" placeholder=" "
+                                    required>
+                                <span class="form-base__span">Пошта</span>
+                                <svg class="form-base__icon-input" width="18px" height="18px">
+                                    <use href="./images/sprite.svg#icon-email-black"></use>
+                                </svg>
+                            </div>
+
+                            <label>
+                                <span class="form-base__comment">Коментар</span>
+                                <textarea class="form-base__textarea" name="comment"
+                                    placeholder="Введіть текст"></textarea>
+                            </label>
+
+                            <label class="form-base__checkbox-field">
+                                <input type="checkbox" class="form-base__checkbox" name="checkbox">
+                                <svg class="form-base__icon-checkbox--empty" width="16px" height="15px">
+                                    <use href="./images/sprite.svg#icon-checkbox-empty"></use>
+                                </svg>
+                                <svg class="form-base__icon-checkbox--checked" width="16px" height="15px">
+                                    <use href="./images/sprite.svg#icon-check"></use>
+                                </svg>
+                                Погоджуюся з розсилкою та приймаю &thinsp;<a class="form-base__link" href="#">Умови
+                                    договору</a>
+                            </label>
+
+                            <button type="submit" class="button button--accent form-base__button">Відравити</button>
+                        </form>
+                    </div>
+                </section>
+
+                <footer class="page-footer">
+                    <div class="page-footer__footer-menu">
+                        <div class="page-footer__wrapper">
+                            <div class="page-footer__group">
+
+                                <a href="./index.html" lang="en" class="logo page-footer__logo">Kochkovyi & Co <span
+                                        class="logo__accent">Group</span></a>
+                                <address>
+                                    <ul class="info-list list-style">
+                                        <li class="info-list__item">
+                                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                                rel="noopener noreferrer nofollow"
+                                                class="info-list__link info-list__link--white-text">1080 W Indiantown
+                                                Road Ste 888, Gotham City</a>
+                                        </li>
+                                        <li class="info-list__item">
+                                            <a href="mailto:kochkovyi@group.com" lang="en"
+                                                class="info-list__link">kochkovyi@group.com</a>
+                                        </li>
+                                        <li class="info-list__item">
+                                            <a href="tel:+380988888888" class="info-list__link">+38 098 888 88 88</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+
+                            <div class="social-links-group">
+                                <h2 class="social-links-group__title">приєднуйтесь</h2>
+                                <ul class="social-links list-style">
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-instagram-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <form class="mailing">
+                            <div class="mailing-group">
+                                <label class="mailing__label">
+                                    <h2 class=" mailing__title">Підпишіться на розсилку</h2>
+                                    <input type=" email" class="mailing__input" name="email" placeholder="E-mail"
+                                        required>
+                                </label>
+                                <button id="subscription-button" type="submit"
+                                    class="button button--accent mailing__button">Підписатися</button>
+                            </div>
+                        </form>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal__body">
+                <div class="modal__content modal__content--hero">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <div id="output"></div>
+                    <template id="template">
+                    </template>
+                    <h2 class="modal__title--hero">Залиште свої дані, ми вам передзвонимо</h2>
+
+                    <form class="form-base">
+                        <div class="form-base__field">
+                            <input type="text" class="form-base__input" name="user-name" id="user-name" placeholder=" "
+                                required>
+                            <span class="form-base__span">Ім'я</span>
+                            <svg class="form-base__icon-input" width="18px" height="18px">
+                                <use href="./images/sprite.svg#icon-person-black"></use>
+                            </svg>
+                        </div>
+
+                        <div class="form-base__field">
+                            <input type="number" class="form-base__input" name="phone" id="phone" placeholder=" "
+                                required>
+                            <span class="form-base__span">Телефон</span>
+                            <svg class="form-base__icon-input" width="18px" height="18px">
+                                <use href="./images/sprite.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
+
+                        <div class="form-base__field">
+                            <input type="email" class="form-base__input" name="email" id="email" placeholder=" "
+                                required>
+                            <span class="form-base__span">Пошта</span>
+                            <svg class="form-base__icon-input" width="18px" height="18px">
+                                <use href="./images/sprite.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
+
+                        <label>
+                            <span class="form-base__comment">Коментар</span>
+                            <textarea class="form-base__textarea" name="comment"
+                                placeholder="Введіть додаткову інформацію"></textarea>
+                        </label>
+
+                        <label class="form-base__checkbox-field">
+                            <input type="checkbox" class="form-base__checkbox" name="checkbox" required>
+                            <svg class="form-base__icon-checkbox--empty" width="16px" height="15px">
+                                <use href="./images/sprite.svg#icon-checkbox-empty"></use>
+                            </svg>
+                            <svg class="form-base__icon-checkbox--checked" width="16px" height="15px">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                            </svg>
+                            Погоджуюся з розсилкою та приймаю &thinsp;<a class="form-base__link" href="#">Умови
+                                договору</a>
+                        </label>
+
+                        <button type="submit" class="button button--accent form-base__button">Відравити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-gratitude" class="modal">
+            <div class="modal__body">
+                <div class="modal__content modal__content--gratitude">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <div id="output"></div>
+                    <template id="template">
+                    </template>
+                    <h2 class="modal__title--gratitude">Дякуємо за довіру! Ваша заявка прийнята</h2>
+                    <p class="modal__text-gratitude">Можете вважати, що на одну проблему у Вас стало менше. Протягом
+                        години з Вами зв'яжеться представник компанії Kochkovyi & Co Group</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-subscription" class="modal">
+            <div class="modal__body">
+                <div class="modal__content modal__content--gratitude">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <div id="output"></div>
+                    <template id="template">
+                    </template>
+                    <h2 class="modal__title--gratitude">Дякую за підписку!</h2>
+                    <p class="modal__text-gratitude">Обіцємо, що Ви будете отримувати лише ексклюзивні, корисні і
+                        цікаві матеріали!</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

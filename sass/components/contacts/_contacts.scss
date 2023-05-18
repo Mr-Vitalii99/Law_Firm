@@ -1,0 +1,75 @@
+/* Block styles */
+.contacts-section {
+    background-color: $accent-black-color;
+    background-image: url(/images/cyty-bg.jpg);
+    background-repeat: no-repeat;
+
+    &__container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 50px;
+
+    }
+
+    &__title {
+        color: $primary-text-color;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__info {
+        line-height: 1.3;
+    }
+
+    &__text {
+        color: $primary-text-color;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__form-title {
+        color: $primary-text-color;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .contacts-section {
+        &__wrapper {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__info {
+            flex: 1;
+            margin-right: 40px;
+        }
+
+        &__info:first-child {
+            margin-top: 50px;
+        }
+
+        &__form-container {
+            flex: 1;
+        }
+    }
+}

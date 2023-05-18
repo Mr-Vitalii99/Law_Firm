@@ -1,0 +1,111 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+
+body {
+    margin: 0px;
+    background-color: $accent-black-color;
+
+    color: $primary-text-color;
+    font-family: $primary-text-fonts, sans-serif;
+
+    &.modal-open {
+        overflow: hidden;
+    }
+
+    &.burger-open {
+        overflow: hidden;
+    }
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+//*  Скидання стилів у списків   */
+
+.list-style {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+//*Загальний контейнер  */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/** Загальний клас для всіх секцій  */
+.section {}
+
+.navigation__button {
+    display: none;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    background-color: #009cc4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    z-index: 12;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+
+@media screen and (min-width: 1170px) {
+    .container {
+        width: 1200px;
+    }
+}

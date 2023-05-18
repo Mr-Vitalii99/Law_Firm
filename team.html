@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="icon" sizes="32x32" href="./images/batman-logo.svg">
+
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="./libs/mustache/mustache.min.js" defer></script>
+    <script src="./js/mailing.js" defer></script>
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/team.js" defer></script>
+    <title>Kochkovyi & Co Group</title>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="wrapper">
+            <div class="content">
+
+                <header class="page-header">
+                    <div class="page-header__top-menu">
+
+
+                        <a href="./index.html" lang="en" class="logo page-header__logo">
+                            Kochkovyi & Co
+                            <span class="logo__accent">Group</span>
+                        </a>
+
+                        <button type="button" class="burger-button" data-menu-button aria-expanded="false"
+                            aria-controls="menu-contaier">
+
+                            <svg class="burger-button__icon" width="40px" height="40px"
+                                aria-label="Переключатель мобильного меню">
+                                <use href="./images/sprite.svg#icon-bat2" class="burger-button__icon--open"></use>
+                                <use href="./images/sprite.svg#burger-close" class="burger-button__icon--close"></use>
+                            </svg>
+                        </button>
+
+                        <div class="menu-container" data-menu>
+                            <nav class="site-nav">
+                                <ul class="site-nav__list list-style">
+                                    <li class="site-nav__item">
+                                        <a href="./index.html" class="site-nav__link">Про нас</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./team.html" class="site-nav__link site-nav__link--current">Команда</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./services.html" class="site-nav__link">Послуги</a>
+                                    </li>
+                                    <li class="site-nav__item">
+                                        <a href="./contacts.html" class="site-nav__link">Контакти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="contacts-container">
+                                <ul class="contacts list-style">
+                                    <li class="contacts__item">
+                                        <a href="mailto:kochkovyi@group.com" lang="en" class="contacts__link ">
+                                            <svg class="contacts__icon-envelope">
+                                                <use href="./images/sprite.svg#icon-envelope"></use>
+                                            </svg>
+                                            kochkovyi@group.com</a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="tel:+380988888888" class="contacts__link contacts__link--accent">
+                                            <svg class="contacts__icon-smartphone">
+                                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                                            </svg>
+                                            +38 098 888 88 88</a>
+                                    </li>
+                                </ul>
+
+                                <ul class="burger-social-links list-style">
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Instagram</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Twitter</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">Facebook</a>
+                                    </li>
+                                    <li class="burger-social-links__item">
+                                        <a href="#" class="burger-social-links__link">LinkedIn</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </header>
+
+
+                <section class="hero-team">
+                    <h1 class="hero-team__title"><span class="hero-team__accent-title">Наша</span>команда</h1>
+                    <div class="hero-team__container">
+                        <img class="hero-team__image">
+                    </div>
+                </section>
+
+                <div class="team-section">
+                    <div class="team-container">
+                        <main class="team">
+
+                            <div class="mobile-container">
+
+                                <div class="team__item-mobile">
+                                    <img data-member="0" class="team__image" src="./images/team/1.jpg" alt="Alt">
+
+                                    <div data-member="0" class="team__descriptions">
+                                        <h2 class="team__descriptions-title">ВІТАЛІЙ КОЧКОВИЙ</h2>
+                                        <p class="team__descriptions__text">Адвокат з бізнесу</p>
+                                    </div>
+                                </div>
+
+                                <div class="team__item-mobile">
+                                    <img data-member="2" class="team__image" src="./images/team/3.jpg" alt="Alt">
+
+                                    <div data-member="2" class="team__descriptions">
+                                        <h2 class="team__descriptions-title">ВІКТОРІЯ ЗЕЙН</h2>
+                                        <p class="team__descriptions__text">Адвокат з питань нерухомості</p>
+                                    </div>
+                                </div>
+
+                                <div class="team__item-mobile">
+                                    <img data-member="1" class="team__image" src="./images/team/2.jpg" alt="Alt">
+
+                                    <div data-member="1" class="team__descriptions">
+                                        <h2 class="team__descriptions-title">ВОЛОДИМИР ТКАЧЕНКО</h2>
+                                        <p class="team__descriptions__text">Адвокат з інтелектуальної власності та
+                                            захисту торгових марок</p>
+                                    </div>
+                                </div>
+                                <div class="team__item-mobile">
+                                    <img data-member="3" class="team__image" src="./images/team/4.jpg" alt="Alt">
+
+                                    <div data-member="3" class="team__descriptions">
+                                        <h2 class="team__descriptions-title">ЮРІЙ КНЯЗЄВ</h2>
+                                        <p class="team__descriptions__text">Старший юрист по интеллектуальной
+                                            собственности и защите
+                                            торговых марок</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div data-speed=".9" class="team__left">
+
+                                <img data-member="0" class="team__item team__image" src="./images/team/1-tablet.png" alt="Alt">
+
+                                <div data-member="2" class="team__descriptions team__item">
+                                    <h2 class="team__descriptions-title">ВІКТОРІЯ ЗЕЙН</h2>
+                                    <p class="team__descriptions__text">Адвокат з питань нерухомості</p>
+                                </div>
+
+
+
+                                <img data-member="1" class="team__item" src="./images/team/2-tablet.jpg" alt="Alt">
+
+                                <div data-member="3" class="team__descriptions team__item">
+                                    <h2 class="team__descriptions-title">ВОЛОДИМИР ТКАЧЕНКО</h2>
+                                    <p class="team__descriptions__text">Старший юрист по интеллектуальной
+                                        собственности и защите
+                                        торговых марок</p>
+                                </div>
+
+
+                            </div>
+
+                            <div data-speed="1.1" class="team__right">
+
+
+                                <div data-member="0" class="team__descriptions team__item">
+                                    <h2 class="team__descriptions-title">ВІТАЛІЙ КОЧКОВИЙ</h2>
+                                    <p class="team__descriptions__text">Адвокат з бізнесу</p>
+
+                                    <img data-member="2" class="team__item" src="./images/team/3-tablet.jpg" alt="Alt">
+
+                                </div>
+
+
+                                <div data-member="1" class="team__descriptions team__item">
+                                    <h2 class="team__descriptions-title">ЮРІЙ КНЯЗЄВ</h2>
+                                    <p class="team__descriptions__text">Адвокат з інтелектуальної власності та захисту
+                                        торгових марок</p>
+                                </div>
+
+                                <img data-member="3" class="team__item" src="./images/team/4-tablet.jpg" alt="Alt">
+
+
+                            </div>
+
+                        </main>
+                    </div>
+                </div>
+
+
+                <footer class="page-footer">
+                    <div class="page-footer__footer-menu">
+                        <div class="page-footer__wrapper">
+                            <div class="page-footer__group">
+
+                                <a href="./index.html" lang="en" class="logo page-footer__logo">Kochkovyi & Co <span
+                                        class="logo__accent">Group</span></a>
+                                <address>
+                                    <ul class="info-list list-style">
+                                        <li class="info-list__item">
+                                            <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                                rel="noopener noreferrer nofollow"
+                                                class="info-list__link info-list__link--white-text">1080 W Indiantown
+                                                Road Ste 888, Gotham City</a>
+                                        </li>
+                                        <li class="info-list__item">
+                                            <a href="mailto:kochkovyi@group.com" lang="en"
+                                                class="info-list__link">kochkovyi@group.com</a>
+                                        </li>
+                                        <li class="info-list__item">
+                                            <a href="tel:+380988888888" class="info-list__link">+38 098 888 88 88</a>
+                                        </li>
+                                    </ul>
+                                </address>
+                            </div>
+
+                            <div class="social-links-group">
+                                <h2 class="social-links-group__title">приєднуйтесь</h2>
+                                <ul class="social-links list-style">
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-instagram-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-links__item">
+                                        <a href="#" class="social-links__link social-links__link--footer">
+                                            <svg class="social-links__icon" width="20px" height="20px">
+                                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <form class="mailing">
+                            <div class="mailing-group">
+                                <label class="mailing__label">
+                                    <h2 class=" mailing__title">Підпишіться на розсилку</h2>
+                                    <input type=" email" class="mailing__input" name="email" placeholder="E-mail"
+                                        required>
+                                </label>
+                                <button type="submit" class="button button--accent mailing__button">Підписатися</button>
+                            </div>
+                        </form>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal__body">
+                <div class="modal__content modal__content--team">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <img class="modal__image" src="" alt="">
+                    <div class="modal__text-container modal__text-container--team">
+                        <div id="output"></div>
+                        <template id="template">
+                            <div class="modal__text">
+                                <h2 class="modal__h2">{{name}}</h2>
+                                <h3 class="modal__h3">{{position}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-subscription" class="modal">
+            <div class="modal__body">
+                <div class="modal__content modal__content--gratitude">
+                    <button class="modal__close-button">
+                        <svg class="button-close-icon" width="22px" height="22px">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <div id="output"></div>
+                    <template id="template">
+                    </template>
+                    <h2 class="modal__title--gratitude">Дякую за підписку!</h2>
+                    <p class="modal__text-gratitude">Обіцємо, що Ви будете отримувати лише ексклюзивні, корисні і
+                        цікаві матеріали!</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+
+</body>
+
+</html>
